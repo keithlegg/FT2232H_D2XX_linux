@@ -9,6 +9,6 @@ I had a hell of a time trying to find any examples of a working driver for an FT
 
 The example in Application Note 114, was designed for D2XX on windows, so I set out re writing it line by line for linux.
 
-I finally got it working. This is a copy of my file before it got much more convoluted. It might not be perfect, but its a lot closer than the PDF is top get you up and running. 
+I finally got it working. This is a copy of my file before it got much more convoluted. It might not be perfect, but its a lot closer than the PDF is to getting you up and running. 
 
 
