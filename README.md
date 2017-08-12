@@ -2,6 +2,11 @@
  minimalist example of full duplex SPI on an FT2232H chip, at USB2.0 speeds. 
  
  Runs on Ubuntu Linux. Based on AN_114.pdf from FTDI
+ 
+ See:
+ 
+ http://www.ftdichip.com/Support/Documents/AppNotes/AN_114_FTDI_Hi_Speed_USB_To_SPI_Example.pdf
+ 
 
 Background:
 
