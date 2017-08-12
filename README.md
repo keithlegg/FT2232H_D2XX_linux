@@ -1,5 +1,9 @@
 # FT2232H_D2XX_linux
- minimalist exampe of SPI on an FT2232H chip. Runs on Ubuntu Linux. Based on AN_114 pdf 
+ minimalist example of full duplex SPI on an FT2232H chip, at USB2.0 speeds. 
+ 
+ Runs on Ubuntu Linux. Based on AN_114.pdf from FTDI
+
+Background:
 
 I had a hell of a time trying to find any examples of a working driver for an FT2232H chip. The example in Application Note 114, was designed for D2XX on windows, so I set out re writing it line by line for linux. This is a copy of my file before it got much more complicated. It might not be perfect, but its a working example, simple , and a lot closer than the PDF is to getting you up and running.
 
