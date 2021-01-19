@@ -16,13 +16,17 @@ STATIC_APP = $(APP)-static
 DYNAMIC_APP = $(APP)-dynamic
 
 #all: $(APP)-static $(APP)-dynamic 
-all: $(APP)-static  
+all: $(APP)-dynamic  
 
 $(STATIC_APP): main.c	
 	$(CC) main.c -o $(STATIC_APP) ../../libftd2xx.a $(CFLAGS) $(DEPENDENCIES)
 
-#$(DYNAMIC_APP): main.c	
-#	$(CC) main.c -o $(DYNAMIC_APP) $(CFLAGS) -lftd2xx $(DEPENDENCIES) $(DYNAMIC_LINK_OPTIONS)
+$(DYNAMIC_APP): main.c	
+	$(CC) main.c -o $(DYNAMIC_APP) $(CFLAGS) -lftd2xx $(DEPENDENCIES) $(DYNAMIC_LINK_OPTIONS)
 	
 clean:
-	-rm -f *.o ; rm $(STATIC_APP); rm $(DYNAMIC_APP)
+	-rm -f *.o ;   
+
+reset:
+	sudo rmmod ftdi_sio;sudo rmmod usbserial 
+		
