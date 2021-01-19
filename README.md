@@ -8,6 +8,16 @@
  http://www.ftdichip.com/Support/Documents/AppNotes/AN_114_FTDI_Hi_Speed_USB_To_SPI_Example.pdf
  
 
+Update 1/19/21 
+   - tested on OSX 10.14.6 using D2XX 1.14.16 and it works!
+
+To use download the drivers and follow the instructions at : 
+
+    https://ftdichip.com/drivers/d2xx-drivers/
+
+    add this in to the example projects and compile it!
+
+
 Background:
 
 I had a hell of a time trying to find any examples of a working driver for an FT2232H chip. The example in Application Note 114, was designed for D2XX on windows, so I set out re writing it line by line for linux. This is a copy of my file before it got much more complicated. It might not be perfect, but its a working example, simple , and a lot closer than the PDF is to getting you up and running.
@@ -20,12 +30,9 @@ The defualt driver is the Virtual Com Port driver , it starts automatically when
     sudo rmmod ftdi_sio; sudo rmmod usbserial;
     
 
-To start follow the instructions at : 
-
-http://www.ftdichip.com/Drivers/D2XX.htm
 
 
-Then just add this in to the example projects and compile it!
+
  
 
 
