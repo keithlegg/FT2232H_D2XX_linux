@@ -12,8 +12,9 @@ See:
 
 To use download the drivers and follow the instructions at : 
 
-    https://ftdichip.com/drivers/d2xx-drivers/
-    add this in to the example projects and compile it!
+https://ftdichip.com/drivers/d2xx-drivers/
+
+add this in to the example projects and compile it!
 
 
 Background:
