@@ -1,20 +1,18 @@
 # FT2232H_D2XX_linux
- minimalist example of full duplex SPI on an FT2232H chip, at USB2.0 speeds. 
+minimalist example of full duplex SPI on an FT2232H chip, at USB2.0 speeds. 
  
- Runs on Ubuntu Linux. Based on AN_114.pdf from FTDI
- 
- See:
- 
- http://www.ftdichip.com/Support/Documents/AppNotes/AN_114_FTDI_Hi_Speed_USB_To_SPI_Example.pdf
- 
-
 Update 1/19/21 
-   - tested on OSX 10.14.6 using D2XX 1.14.16 and it works!
+    - tested on OSX 10.14.6 using D2XX 1.14.16 , and Ubuntu Linux. 
+
+Based on AN_114.pdf from FTDI
+
+See:
+    http://www.ftdichip.com/Support/Documents/AppNotes/AN_114_FTDI_Hi_Speed_USB_To_SPI_Example.pdf
+
 
 To use download the drivers and follow the instructions at : 
 
     https://ftdichip.com/drivers/d2xx-drivers/
-
     add this in to the example projects and compile it!
 
 
@@ -28,6 +26,8 @@ D2XX is FTDI's native- closed source library with windows compatibility , so be 
 The defualt driver is the Virtual Com Port driver , it starts automatically when the device is plugged in. To develop d2xx drivers you have to temporarily remove VCP (until device is reset or power cycled): 
 
     sudo rmmod ftdi_sio; sudo rmmod usbserial;
+
+    
     
 
 
